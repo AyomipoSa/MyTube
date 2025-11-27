@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY TUBE - Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="header-left">
+        <div class="logo">
+            <a href="index.html"><img src="images.jpeg" alt="logo" width="100" height="50"></a>
+        </div>
+    </div>
+    <div class="header-Left">
+        <h2>MY TUBE</h2>
+    </div>
+    <div class="header-center">
+        <div class="search-container">
+            <input type="text" placeholder="Search videos" class="search-bar" width="100px">
+            <button class="search-btn">Enter</button>
+        </div>
+    </div>
+    <div class="header-right">
+        <button class="theme-toggle" onclick="Darktheme()">🌙️</button>
+        <button class="theme-toggle" onclick="Lighttheme()">☀️</button>
+
+    </div>
+    <div class="user-icon"> AS </div>
+</header>
+
+<div class="header-bottom"></div>
+<nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="video.html">Trending</a>
+    <a href="categories.html" class="active" >Categories</a>
+</nav>
+<main class="main-content">
+    <section class="category-header">
+        <h2>Browse Categories</h2>
+        <p>Select a category to explore different types of videos.</p>
+    </section>
+
+    <section class="category-grid">
+        <article class="category-card">
+            <h3>Music</h3>
+            <p>Music videos, performances, and playlists.</p>
+            <a href="video.html">View videos</a>
+        </article>
+
+        <article class="category-card">
+            <h3>Gaming</h3>
+            <p>Gameplay clips, walkthroughs, and highlights.</p>
+            <a href="video.html">View videos</a>
+        </article>
+
+        <article class="category-card">
+            <h3>Education</h3>
+            <p>Tutorials, explainers, and how-to videos.</p>
+            <a href="video.html">View videos</a>
+        </article>
+
+        <article class="category-card">
+            <h3>Comedy</h3>
+            <p>Funny clips, skits, and meme compilations.</p>
+            <a href="video.html">View videos</a>
+        </article>
+
+        <article class="category-card">
+            <h3>Vlogs</h3>
+            <p>Daily life, travel, and lifestyle vlogs.</p>
+            <a href="video.html">View videos</a>
+        </article>
+
+        <article class="category-card">
+            <h3>Tech</h3>
+            <p>Reviews, unboxings, and tech news.</p>
+            <a href="video.html">View videos</a>
+        </article>
+    </section>
+</main>
+
+<div class="notification" id="notification"></div>
+
+<footer class="footer">
+    <p>&copy; 2025 MYTUBE. All rights reserved. Project by Sanni Ayomipo Rodiat</p>
+</footer>
+</body>
+</html>

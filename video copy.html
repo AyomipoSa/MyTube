@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY TUBE - Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+
+</head>
+<body>
+<header class="header">
+    <div class="header-left">
+        <div class="logo">
+            <a href="index.html"><img src="images.jpeg" alt="logo" width="100" height="50"></a>
+        </div>
+    </div>
+    <div class="header-Left">
+        <h2>MY TUBE</h2>
+    </div>
+    <div class="header-center">
+        <div class="search-container">
+            <input type="text" placeholder="Search videos" class="search-bar" width="100px">
+            <button class="search-btn">Enter</button>
+        </div>
+    </div>
+    <div class="header-right">
+        <button class="theme-toggle" onclick="Darktheme()">🌙️</button>
+        <button class="theme-toggle" onclick="Lighttheme()">☀️</button>
+    </div>
+    <div class="user-icon"> AS </div>
+</header>
+
+<div class="header-bottom"></div>
+<nav class="nav">
+    <a href="index.html" >Home</a>
+    <a href="video.html" class="active">Trending</a>
+    <a href="categories.html">Categories</a>
+</nav>
+
+<main class="main-content video-page">
+    <section class="video-main">
+        <video controls width="100%">
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h2 class="video-title">Sample Trending Video</h2>
+        <p class="video-meta">123,456 views • Uploaded Jan 1, 2025 • by MyTube Channel</p>
+
+        <article class="video-description">
+            <h3>Description</h3>
+            <p>
+                This is a short description of the trending video. You can replace this text
+                with a real description later. For now, it just explains what the video is about.
+            </p>
+        </article>
+
+        <section class="video-comments">
+            <h3>Comments</h3>
+            <p><strong>User1:</strong> This video was really interesting!</p>
+            <p><strong>User2:</strong> I learned a lot from this.</p>
+            <p>(You can make this dynamic with JavaScript in the future.)</p>
+        </section>
+    </section>
+
+    <aside class="video-sidebar">
+        <h3>Related Videos</h3>
+        <ul class="related-list">
+            <li>
+                <a href="video.html">Cool Tutorial</a><br>
+                <small>Channel One • 34k views</small>
+            </li>
+            <li>
+                <a href="video.html">Funny Clip</a><br>
+                <small>Channel Two • 89k views</small>
+            </li>
+            <li>
+                <a href="video.html">Music Mix</a><br>
+                <small>Channel Three • 12k views</small>
+            </li>
+        </ul>
+    </aside>
+</main>
+
+<div class="notification" id="notification"></div>
+
+<footer class="footer">
+    <p>&copy; 2025 MYTUBE. All rights reserved. Project by Sanni Ayomipo Rodiat</p>
+</footer>
+</body>
+</html>

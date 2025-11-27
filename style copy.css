@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fafafa;
+    color: #222;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ff4c4c;
+    padding: 0.8rem 1.5rem;
+    color: #fff;
+}
+
+.header-left,
+.header-center,
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header h2 {
+    margin: 0 1rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+    border: none;
+    margin-right: 0.5rem;
+}
+
+.search-btn {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    background: #fff;
+    color: #ff4c4c;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.user-icon {
+    background: #ffffff;
+    color: #ff4c4c;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: #ffe0e0;
+    padding: 0.7rem 0;
+}
+
+.nav a {
+    color: #ff4c4c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a.active,
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.video-card {
+    background: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.no-results {
+    display: none;
+    text-align: center;
+    color: #888;
+}
+
+.video-page {
+    display: flex;
+    gap: 2rem;
+}
+
+.video-main {
+    flex: 2;
+}
+
+.video-sidebar {
+    flex: 1;
+}
+
+.related-list {
+    list-style: none;
+    padding: 0;
+}
+
+.related-list li {
+    margin-bottom: 1rem;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.category-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.category-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #ff4c4c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.category-card a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #ff4c4c;
+    color: white;
+    margin-top: 2rem;
+}
+
+address a {
+    color: white;
+    text-decoration: underline;
+}
